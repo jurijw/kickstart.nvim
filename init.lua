@@ -489,6 +489,10 @@ require('lazy').setup({
         -- gopls = {},
         pyright = {},
         -- rust_analyzer = {},
+        -- Install java language server.
+        jdtls = {},
+        -- Install language server for LaTeX.
+        texlab = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -766,6 +770,7 @@ require('lazy').setup({
         --  the list of additional_vim_regex_highlighting and disabled languages for indent.
         additional_vim_regex_highlighting = { 'ruby' },
         -- Disable syntax highlighting for latex files. This should allow VimTex to take care of syntax highlighting.
+        -- TODO: VimTex highlighting could be a lot better.
         disable = { 'latex' },
       },
       indent = { enable = true, disable = { 'ruby' } },
