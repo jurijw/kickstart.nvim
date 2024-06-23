@@ -493,6 +493,16 @@ require('lazy').setup({
         jdtls = {},
         -- Install language server for LaTeX.
         texlab = {},
+        -- Add haskell-language-server (hls)
+        hls = {
+          -- Optional settings for HLS
+          settings = {
+            haskell = {
+              formattingProvider = 'ormolu', -- Choose your preferred formatter, e.g., "ormolu", "brittany", "fourmolu"
+              hlintOn = true, -- Enable HLint diagnostics
+            },
+          },
+        },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
